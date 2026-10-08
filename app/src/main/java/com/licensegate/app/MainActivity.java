@@ -1,5 +1,6 @@
 package com.licensegate.app;
 
+import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -7,12 +8,10 @@ import android.text.InputType;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import java.text.DateFormat;
 import java.util.Date;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity {
     private static final String PREFS = "license_gate_v1";
     private static final String KEY_STATUS = "status";
     private static final String KEY_EXPIRES = "expiresAt";
